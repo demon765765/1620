@@ -56,5 +56,8 @@ class Television:
                 self.__volume = max(self.__volume - 1, self.MIN_VOLUME)
 
     def __str__(self) -> str:
-        """Return a string of the Television status."""
+        """
+        Return a string of the Television status.
+        :return: returns tv status.
+        """
         return f"Power = {self.__status}, Channel = {self.__channel}, Volume = {self.__volume}"
